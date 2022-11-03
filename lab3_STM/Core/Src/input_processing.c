@@ -39,14 +39,13 @@ void fsm_for_input_processing(void){
 					timer2_flag = 1; //for scanning led7seg
 					setTrafficRed1();
 					setTrafficRed2();
+					flag = 0; //reset
 					break;
 				}
 			}
 			break;
 		case SET_TIME_RED: //Mode 2
 			//điều chỉnh duration cho led red
-			initTrafficLight1();
-			initTrafficLight2();
 			while (flag == 0) {
 				if (timer1_flag == 1) {
 					setTimer1(500);
@@ -92,6 +91,7 @@ void fsm_for_input_processing(void){
 					setTrafficYellow2();
 					flag = 1;
 					led7SegScanning = 1; //reset
+					counterForRed = 0; //rest
 				}
 			}
 			break;
@@ -143,6 +143,7 @@ void fsm_for_input_processing(void){
 					setTrafficGreen2();
 					flag = 1;
 					led7SegScanning = 1; //reset
+					counterForYellow = 0; //reset
 				}
 			}
 			break;
@@ -189,6 +190,7 @@ void fsm_for_input_processing(void){
 					buttonState = NORMAL;
 					flag = 1;
 					led7SegScanning = 1; //reset
+					counterForGreen = 0; //reset
 				}
 			}
 			break;
