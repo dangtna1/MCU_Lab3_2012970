@@ -1,0 +1,4 @@
+led_controller.c:30:6:enableLed7Seg1	8	static
+led_controller.c:36:6:enableLed7Seg2	8	static
+led_controller.c:42:6:enableLed7Seg3	8	static
+led_controller.c:48:6:enableLed7Seg4	8	static

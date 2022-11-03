@@ -1,0 +1,5 @@
+fsm_automatic.c:23:6:display7SEG_1	16	static
+fsm_automatic.c:34:5:getTimeAtIndex0	24	static
+fsm_automatic.c:38:5:getTimeAtIndex1	16	static
+fsm_automatic.c:258:6:fsm_automatic_run1	8	static
+fsm_automatic.c:483:6:fsm_automatic_run2	8	static
