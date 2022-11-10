@@ -1,4 +1,13 @@
-led_controller.c:30:6:enableLed7Seg1	8	static
-led_controller.c:36:6:enableLed7Seg2	8	static
-led_controller.c:42:6:enableLed7Seg3	8	static
-led_controller.c:48:6:enableLed7Seg4	8	static
+led_controller.c:24:6:display7SEG_1	16	static
+led_controller.c:33:6:enableLed7Seg1	8	static
+led_controller.c:39:6:enableLed7Seg2	8	static
+led_controller.c:45:6:enableLed7Seg3	8	static
+led_controller.c:51:6:enableLed7Seg4	8	static
+led_controller.c:58:6:initTrafficLight1	8	static
+led_controller.c:64:6:initTrafficLight2	8	static
+led_controller.c:69:6:setTrafficRed1	8	static
+led_controller.c:74:6:setTrafficRed2	8	static
+led_controller.c:80:6:setTrafficGreen1	8	static
+led_controller.c:85:6:setTrafficGreen2	8	static
+led_controller.c:91:6:setTrafficYellow1	8	static
+led_controller.c:97:6:setTrafficYellow2	8	static

@@ -27,7 +27,7 @@ Core/Src/input_processing.o: ../Core/Src/input_processing.c \
  ../Core/Inc/input_reading.h ../Core/Inc/software_timer.h \
  ../Core/Inc/fsm_automatic.h ../Core/Inc/global.h \
  ../Core/Inc/software_timer.h ../Core/Inc/input_reading.h \
- ../Core/Inc/main.h ../Core/Inc/led_controller.h
+ ../Core/Inc/main.h ../Core/Inc/led_controller.h ../Core/Inc/global.h
 
 ../Core/Inc/input_processing.h:
 
@@ -96,3 +96,5 @@ Core/Src/input_processing.o: ../Core/Src/input_processing.c \
 ../Core/Inc/main.h:
 
 ../Core/Inc/led_controller.h:
+
+../Core/Inc/global.h:

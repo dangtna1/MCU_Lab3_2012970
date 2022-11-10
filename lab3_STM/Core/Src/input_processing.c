@@ -10,6 +10,8 @@
 #include "software_timer.h"
 #include "fsm_automatic.h"
 #include "led_controller.h"
+#include "global.h"
+
 enum ButtonState { NORMAL, SET_TIME_RED, SET_TIME_YELLOW, SET_TIME_GREEN } ;
 enum ButtonState buttonState = NORMAL ;
 int counterForRed = 0;
@@ -81,6 +83,7 @@ void fsm_for_input_processing(void){
 
 				if(isButton3Press() == 1) {
 					led_duration[0] += counterForRed;
+					if (led_duration[0] > 99) led_duration[0] = 1;
 					counterForRed = 0; //reset
 				}
 				if(isButton1Press() == 1) {
@@ -133,6 +136,7 @@ void fsm_for_input_processing(void){
 
 				if(isButton3Press() == 1) {
 					led_duration[1] += counterForYellow;
+					if (led_duration[1] > 99) led_duration[1] = 1;
 					counterForYellow = 0; //reset
 				}
 				if(isButton1Press() == 1) {
@@ -184,6 +188,7 @@ void fsm_for_input_processing(void){
 
 				if(isButton3Press() == 1) {
 					led_duration[2] += counterForGreen;
+					if (led_duration[2] > 99) led_duration[2] = 1;
 					counterForGreen = 0; //reset
 				}
 				if(isButton1Press() == 1) {

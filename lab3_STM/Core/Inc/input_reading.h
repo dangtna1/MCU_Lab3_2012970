@@ -27,4 +27,5 @@ void getKeyInput1();
 void getKeyInput2();
 void subKeyProcess();
 
+
 #endif /* INC_INPUT_READING_H_ */

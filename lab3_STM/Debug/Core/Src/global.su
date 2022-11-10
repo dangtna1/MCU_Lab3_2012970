@@ -1,8 +1,0 @@
-global.c:20:6:initTrafficLight1	8	static
-global.c:26:6:initTrafficLight2	8	static
-global.c:31:6:setTrafficRed1	8	static
-global.c:36:6:setTrafficRed2	8	static
-global.c:42:6:setTrafficGreen1	8	static
-global.c:47:6:setTrafficGreen2	8	static
-global.c:53:6:setTrafficYellow1	8	static
-global.c:59:6:setTrafficYellow2	8	static
